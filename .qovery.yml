@@ -1,0 +1,14 @@
+application:
+  name: kantaiop
+  project: kantaiop-2
+  publicly_accessible: true
+databases:
+- type: postgresql
+  version: "12"
+  name: my-psql
+routers:
+- name: kantaiop-sappdeov
+  routes:
+  - application_name: kantaiop
+    paths:
+    - /
